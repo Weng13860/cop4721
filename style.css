@@ -1,0 +1,323 @@
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#logo {
+    max-width: 100%; 
+    max-height: 80%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px;
+}
+.grid-container {
+    display: grid;
+    height: 90px;
+    
+}
+.grid-bottom-left, .grid-bottom-right {
+    padding: 20px; 
+}
+
+  
+  .navbar-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: right;
+  }
+  
+  .navbar:hover .navbar-content {
+    display: block;
+  }
+  
+  .navbar-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .navbar-content a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+ 
+ 
+  .toggleNavbar:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+.nav-link:hover {
+    color: hotpink;
+  }
+  
+ 
+  .nav-link:focus {
+    color: blue;
+    outline: none; 
+  }
+  .grid-top {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: space-between; /* 水平间距设置为两边对齐 */
+    align-items: center; /* 垂直居中对齐 */
+    background-color: #360b56;
+    border-bottom: 3px solid rgb(203, 166, 206);
+  }
+  
+  .title-navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* 垂直顶对齐 */
+  }
+  
+  .title {
+    font-size: 3em;
+    font-weight: bold;
+    color: #d799a0;
+    margin: 0; /* 去除默认的外边距 */
+  }
+  
+  .navbar {
+    position: relative;
+    font-style: normal;
+  }
+  
+  #toggleNavbar {
+    font-size: 20px;
+    padding: 12px 32px;
+    margin: 0;
+    align-self: flex-end; /* 将按钮移动到右侧 */
+  }
+  
+  #main-screen{
+    width: 100%;
+  }
+
+  #sidebar{
+    height:100%;
+    width:20%;
+    float:left;
+    border: 3px solid black;
+    overflow: scroll;
+  }
+
+  #sidebar-overlay{
+    height:900px;
+    position:absolute;
+    top:90px;
+    left:0px;
+    width:260px;
+    background: rgba(0, 0, 0, 0.3);
+    visibility: hidden;
+  }
+
+  #main{
+    width:80%;
+    position:absolute;
+    top:90px;
+    right:0px;
+    height:84%;
+    border: 3px solid black;
+    background-color: white;
+    z-index: 1;
+  }
+
+  #main2{
+    width:80%;
+    height:84%;
+    position:absolute;
+    top:90px;
+    right:0px;
+    border: 3px solid black;
+    background-color: white;
+    z-index: 0;
+  }
+
+  #sidebar-header{
+    height:30px;
+    width:max-content;
+    font-size: 30px;
+    margin: 30px;
+    margin-bottom: 20px;
+  }
+
+  #main-header{
+    height:30px;
+    width:70%;
+    font-size: 30px;
+    margin: 30px;
+  }
+
+  #main2-header{
+    height:30px;
+    width:70%;
+    font-size: 30px;
+    padding: 40px;
+  }
+
+  .searchbar{
+    width:90% !important ;
+    padding-top: 18px;
+    margin-left: 40px;
+  }
+
+  .oval-button{
+    margin-bottom:20px;
+    margin-left: 40px;
+    border-radius: 50px !important;
+  }
+
+  #playlist-container{
+    width:85.5%;
+    overflow-y: scroll;
+    margin-top: 20px;
+    margin-left: 40px;
+  }
+
+  #playlist2-container{
+    width:85.5%;
+    overflow-y: scroll;
+    margin-top: 20px;
+    margin-left: 40px;
+    height:95%;
+  }
+
+  .playlist-entry{
+    display:flex !important;
+  }
+
+  .playlist-entry-text1{
+    float:left;
+    flex:0.5;
+  }
+
+  .playlist-entry-text2{
+    float:left;
+    flex:1;
+  }
+
+  .cover-container{
+    font-size:12px; 
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:20px;
+  }
+
+  .img-container{
+    font-size:12px; 
+    max-width: 80px;
+    max-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cover-img{
+    width:50%;
+  }
+
+  .add-btn{
+    width: 100%;
+  } 
+
+  #sidebar-buttons{
+    position: absolute;
+    bottom: 20px;
+    left:20px;
+    width:max-content;
+  }
+
+  .song{
+    font-size: 18px;
+  }
+
+  .album{
+    font-size: 18px;
+  }
+
+  .artist{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 18px;
+  }
+
+  
+  .container-container{
+    width:100%;
+    height:max-content;
+    display: flex;
+    justify-content: center;
+  }
+
+  .found-or-not-container{
+    height:max-content;
+    width:240px;
+    position: absolute;
+    margin-top: 60px;
+  }
+
+  .found-or-not-img{
+    width:100%;
+  }
+  
+  #notfound{
+    visibility: hidden;
+  }
+
+  #spinner{
+    animation-duration: 1.2s !important;
+    margin-left:10px;
+    visibility: hidden;
+  }
+
+  #slider-holder{
+    height:400px;
+    display: flex;
+    align-items: center;
+    margin-top:10px !important;
+  }
+
+  .vertical-slider {
+    margin-top: 80px;
+    margin-left: -50px;
+    transform: rotate(-270deg);
+    width: 100px;  
+  }
+
+  #added-tags{
+    margin-left: 20px;
+    margin-top: 30px;
+    font-size: 20px;
+  }
+  
+  .designBtags{
+    margin-bottom:10px !important;
+  }
+
+  #moodValue{
+    width:148px;
+    margin-left: 65px;
+    margin-top: -25px;
+  }
